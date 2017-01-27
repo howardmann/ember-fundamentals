@@ -1,0 +1,24 @@
+<h2>Input</h2>
+{{outlet}}
+
+<button {{action 'toggleHide'}}>Hide</button>
+
+<br>
+
+{{input text='text' value=banana}}
+<button {{action 'pressed' banana}}>Press Me</button>
+
+<br>
+
+<form {{action 'formSubmit' orange apple pear on='submit'}}>
+  <p>Name</p>
+  <p>{{input text='text' value=orange}}</p>
+
+  <p>Address</p>
+  <p>{{input text='text' value=apple}}</p>
+
+  <p>Age</p>
+  <p>{{input type='number' value=pear}}</p>
+
+  <p><input type="submit"></p>
+</form>
