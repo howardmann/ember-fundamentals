@@ -14,5 +14,13 @@ export default Ember.Route.extend({
       console.log(pear);
     }
   },
-  isHide: 'banana'
+  isHide: 'banana',
+  // // For debugging purposes
+  // model(){
+  //   var obj = Ember.Object.extend({
+  //     type: 'banana'
+  //   });
+  //   var fruit = obj.create();
+  //   return fruit
+  // }
 });
