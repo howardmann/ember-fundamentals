@@ -1,0 +1,11 @@
+<p>Teacher: {{teacher}}</p>
+<p>Students:</p>
+<ul>
+  {{#each students as |student|}}
+  <li>{{student}}</li>
+  {{/each}}
+</ul>
+<p>Class size: {{classSize}}</p>
+<button {{action 'removeStudent'}}>Remove student</button>
+
+{{yield}}
