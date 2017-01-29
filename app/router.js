@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('input');
   this.route('students');
   this.route('pupils');
+  this.route('colors');
 });
 
 export default Router;
