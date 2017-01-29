@@ -19,5 +19,11 @@
   <p>Age</p>
   <p>{{input type='number' value=pear}}</p>
 
-  <p><input type="submit"></p>
+  <p><input type="submit">Two way binding</p>
 </form>
+<p>Name: {{orange}}</p>
+<p>Address: {{apple}}</p>
+<p>Age: {{pear}}</p>
+
+<p>Pass action value</p>
+<button {{action 'valuePass' 'pineapple'}}>Action value</button>

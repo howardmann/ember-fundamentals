@@ -1,4 +1,5 @@
 import Ember from 'ember';
+let $ = Ember.$;
 
 export default Ember.Route.extend({
   actions: {
@@ -12,6 +13,9 @@ export default Ember.Route.extend({
       console.log(orange);
       console.log(apple);
       console.log(pear);
+    },
+    valuePass(val){
+      console.log(val);
     }
   },
   isHide: 'banana',
