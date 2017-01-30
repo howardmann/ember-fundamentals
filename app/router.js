@@ -11,6 +11,12 @@ Router.map(function() {
   this.route('students');
   this.route('pupils');
   this.route('colors');
+  this.route('authors', function() {
+    this.route('author', {
+      path: ':author_id'
+    });
+  });
+  this.route('books');
 });
 
 export default Router;

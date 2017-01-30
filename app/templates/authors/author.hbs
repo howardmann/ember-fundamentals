@@ -1,0 +1,8 @@
+<h2>Author</h2>
+<p>Name: {{model.name}}</p>
+<p>Age: {{model.age}}</p>
+<p>Admin: {{model.admin}}</p>
+<p>Books: {{model.books.length}}</p>
+{{#each model.books as |book|}}
+<p>Title: {{book.title}}</p>
+{{/each}}

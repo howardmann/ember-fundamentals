@@ -1,0 +1,12 @@
+<h2>Books</h2>
+{{#each model as |book|}}
+<ul>
+  <li>id: {{book.id}}</li>
+  <li>Title: {{book.title}}</li>
+  <li><strong>Book Author</strong></li>
+  <ul>
+    <li>Name: {{#link-to 'authors.author' book.author }}{{book.author.name}} {{/link-to}}</li>
+    <li>Age: {{book.author.age}}</li>
+  </ul>
+</ul>
+{{/each}}
